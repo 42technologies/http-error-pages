@@ -1,0 +1,28 @@
+extend _layout
+
+block head
+  link(rel="stylesheet", href="css/unsupported-browser.css")
+
+block content
+  a.logo(href="http://42debut.com/") 42
+  a.support-link(href="mailto:support+unsupported-browser@42debut.com") Contact support
+
+  .content
+    p
+      span.top Sorry, your browser is not supported :(
+      br
+      | Please update your browser or download a free one below
+
+    ul
+      li
+        a(href="http://www.mozilla.com/firefox/")
+          .browser-logo.browser-logo-firefox
+          | Firefox
+      li
+        a(href="http://www.google.com/chrome/")
+          .browser-logo.browser-logo-chrome
+          | Chrome
+      li
+        a(href="http://www.opera.com/")
+          .browser-logo.browser-logo-opera
+          | Opera
