@@ -1,3 +1,5 @@
+@import "image-mixins";
+
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
@@ -21,7 +23,7 @@ html {
 }
 body {
   height: 100%;
-  background: #242a33 url('/assets/background.png') no-repeat;
+  @include background-image();
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -125,12 +127,12 @@ a:hover {
     background-size: 128px 128px;
   }
   .browser-logo-chrome {
-    background-image: url('/assets/chrome.png');
+    @include chrome-image();
   }
   .browser-logo-firefox {
-    background-image: url('/assets/firefox.png');
+    @include firefox-image();
   }
   .browser-logo-opera {
-    background-image: url('/assets/opera.png');
+    @include opera-image();
   }
 }
