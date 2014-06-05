@@ -23,6 +23,7 @@ module.exports = (grunt) ->
       optimize: [
         "uglify"
         "newer:imagemin"
+        "inline:release"
       ]
 
     connect:
@@ -79,6 +80,10 @@ module.exports = (grunt) ->
           src: ["src/assets/**/*.{png,jpg,gif}"]
           dest: "release/assets/"
         ]
+
+    inline:
+      release:
+        src: ["release/**/*.html"]
 
     jade:
       options:
@@ -185,6 +190,7 @@ module.exports = (grunt) ->
     "concurrent:release"
     "concurrent:optimize"
     "clean:tmp"
+    "inline:release"
     "connect:release"
   ]
 
