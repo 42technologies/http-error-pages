@@ -97,7 +97,7 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: "src"
-          src: ["**/*.jade"]
+          src: ["**/*.jade", '!**/_*.jade']
           dest: "release"
           ext: ".html"
         ]
@@ -108,7 +108,7 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: "src"
-          src: ["**/*.jade"]
+          src: ["**/*.jade", '!**/_*.jade']
           dest: "release"
           ext: ".html"
         ]
