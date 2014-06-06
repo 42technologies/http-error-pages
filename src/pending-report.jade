@@ -1,0 +1,16 @@
+extend jade/_layout
+
+block head
+  link(rel="stylesheet", href="css/pending-report.css?")
+  script(src="js/app.js?__inline=true")
+
+block content
+  a.logo(href="http://42debut.com/") 42
+  a.support-link(href="mailto:support+unsupported-browser@42debut.com") Contact support
+
+  .content
+    p
+      span.top Hold on tight, your report is being generated
+      br
+      .progress-bar
+        .bar
