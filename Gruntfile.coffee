@@ -125,6 +125,7 @@ module.exports = (grunt) ->
         options:
           linenos: true
           compress: false
+          includePaths:   require('node-bourbon').includePaths
 
       release:
         files: [
@@ -134,6 +135,8 @@ module.exports = (grunt) ->
           dest: "release/css"
           ext: ".css"
         ]
+        options:
+          includePaths:   require('node-bourbon').includePaths
 
     uglify:
       release:
