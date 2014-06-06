@@ -1,0 +1,13 @@
+extend jade/_layout
+
+block head
+  link(rel="stylesheet", href="css/default.css?__inline=true")
+
+block content
+  a.logo(href="http://42debut.com/") 42
+  p
+    span.top Sorry, that page does not exist
+    br
+    a(href="http://42debut.com/") Go to homepage
+    = " or "
+    a(href="mailto:support+404@42debut.com") contact support
