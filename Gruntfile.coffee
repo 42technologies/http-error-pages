@@ -86,12 +86,6 @@ module.exports = (grunt) ->
         src: ["release/**/*.html"]
 
     jade:
-      options:
-        data:
-          title: "<%= pkg.name %>"
-          author: "<%= pkg.author %>"
-          description: "<%= pkg.description %>"
-          version: "<%= pkg.version %>"
 
       dev:
         files: [
