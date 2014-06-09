@@ -154,7 +154,7 @@ module.exports = (grunt) ->
         tasks: ["jade:dev"]
 
       sass:
-        files: ["src/sass/**/*.sass"]
+        files: ["src/sass/**/*.scss"]
         tasks: ["sass:dev"]
 
       coffee:
