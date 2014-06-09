@@ -13,10 +13,3 @@ block content
     h1 Your dashboard is being prepared
     p
       | Thanks for signing up! We’ll email you with a link to your dashboard soon.
-
-block scripts
-  script
-    :coffeescript
-      setTimeout (->
-          window.location.href = "http://dash.clover.42debut.com"
-      ), 42 * 1000
