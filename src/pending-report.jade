@@ -1,7 +1,7 @@
 extend jade/_layout
 
 block head
-  link(rel="stylesheet", href="css/pending-report.css?")
+  link(rel="stylesheet", href="css/pending-report.css?__inline=true")
   script(src="js/app.js?__inline=true")
 
 block content
@@ -14,6 +14,7 @@ block content
       br
       .progress-bar
         .bar
+
   :coffeescript
     setTimeout (->
         window.location.href = "http://dashboard.clover.42debut.com"
