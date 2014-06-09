@@ -16,7 +16,8 @@ block content
         .bar
 
 block scripts
-  :coffeescript
-    setTimeout (->
-        window.location.href = "http://dashboard.clover.42debut.com"
-    ), 42 * 1000
+  script
+    :coffeescript
+      setTimeout (->
+          window.location.href = "http://dashboard.clover.42debut.com"
+      ), 42 * 1000
