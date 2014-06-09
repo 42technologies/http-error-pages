@@ -36,6 +36,7 @@ body {
   padding-top: 40px;
   text-align: center;
   background: rgba(36, 42, 51, .75);
+  height: 100%;
 }
 .logo {
   display: block;
@@ -59,10 +60,11 @@ p {
 ul {
   margin-top: 10px;
 }
-.top {
+h1 {
   display: inline-block;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 400;
 }
 a {
   color: #fff;
