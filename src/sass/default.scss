@@ -1,15 +1,17 @@
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 300;
-  font-style: normal;
-  src: url('http://42debut.com/assets/fonts/open-sans/OpenSans-Light-webfont.eot');
-  src: url('http://42debut.com/assets/fonts/open-sans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('http://42debut.com/assets/fonts/open-sans/OpenSans-Light-webfont.woff') format('woff'), url('/assets/fonts/open-sans/OpenSans-Light-webfont.ttf') format('truetype'), url('http://42debut.com/assets/fonts/open-sans/OpenSans-Light-webfont.svg#Open Sans') format('svg'); }
-@font-face {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-style: normal;
-  src: url('http://42debut.com/assets/assets/fonts/open-sans/OpenSans-Regular-webfont.eot');
-  src: url('http://42debut.com/assets/assets/fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('http://42debut.com/assets/assets/fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'), url('http://42debut.com/assets/assets/fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'), url('/assets/fonts/open-sans/OpenSans-Regular-webfont.svg#Open Sans') format('svg'); }
+@import "bourbon";
+
+@include font-face(
+    "Open Sans",
+    'http://42debut.com/assets/fonts/open-sans/OpenSans-Light-webfont',
+    300
+);
+
+@include font-face(
+    "Open Sans",
+    'http://42debut.com/assets/fonts/open-sans/OpenSans-Regular-webfont',
+    400
+);
+
 * {
   margin: 0;
   padding: 0;
